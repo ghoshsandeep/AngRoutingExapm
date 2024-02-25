@@ -1,0 +1,12 @@
+<p>about works!</p>
+
+<nav>
+    <ul>
+        <li><a routerLink="/about/projects">Project</a></li>
+        <li><a routerLink="/about/projects" [queryParams]="{projectid:123}">Project with Query Parameter</a></li>
+        <!-- <li><a routerLink="/about/sponsors">Sponsors</a></li> -->
+        <li><a [routerLink]="['sponsors']">Sponsors</a></li>
+    </ul>
+</nav>
+
+<router-outlet></router-outlet>
